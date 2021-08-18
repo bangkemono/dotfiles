@@ -3,43 +3,25 @@
                     made by Bangkemono
                                                              -->
 # Dotfiles 
-![iceage theme](https://i.imgur.com/rJRBJ2n.png)
+![i3](https://github.com/bangkemono/dotfiles/blob/master/i3.png)
 
-![lightnime theme](https://i.imgur.com/jU1JBGh.jpeg)
+![dwm](https://github.com/bangkemono/dotfiles/blob/master/dwm.png)
 
 ## Installation
 
 **BEFORE YOU INSTALL, MAKE SURE YOU REVIEW THE CODE AND REMOVE THE ONES YOU DO NOT NEED**<br/>
-in summary, use these dots at your own risk, it's open source anyways  <br/>
-first copy the source code  
+in summary, use these dots at your own risk, it's open source anyways.  <br/>
 
 ```bash
-git clone https://github.com/bangkemono/dotfiles.git && cd dotfiles
+git clone https://github.com/bangkemono/dotfiles.git
+cd dotfiles
 ```  
 
-just copy everything in configs/ to .configs, and afterwards you could also copy the wallpapers to whichever wallpaper directory you want, vimrc and bashrc goes in its said place,
-you could merge Xresources with xrdb straight from source. (yes i use xterm)  
+just copy everything in configs/ to .configs, and afterwards you could also copy the wallpapers to whichever wallpaper directory you want, vimrc and bashrc goes in its said place<br>
+and if you want to, you could merge Xresources with xrdb straight from source. (yes i use xterm)  
 
-```bash
-cp bashrc ~/.bashrc && cp vimrc ~/.vimrc && cd i3-gaps/iceage/ && cp config/* -rv ~/.config/
-```
-for iceage theme (the one i use for the preview), or
-```bash
-cp bashrc ~/.bashrc && cp vimrc ~/.vimrc && cd i3-gaps/light/ && cp config/* -rv ~/.config/
-```
-for the lightnime theme config, or
-```bash
-cp bashrc ~/.bashrc && cp vimrc ~/.vimrc && cd i3-gaps/dark/ && cp config/* -rv ~/.config/
-```
-for the dark theme config
-
-## Themes
-
-There are 3 themes that are currently available for my i3-gaps config (i will post screenshots of it later)  
-
-* Iceage (custom theme with a nord-ish look)
-* Lightnime Theme
-* Dark Theme
+if you use dwm, feel free to use my dwm config, the colorscheme's a bit greenish to fit sucrose's color, but it's easy on the eyes. If you prefer i3 however, you could also just<br>
+copy everything within the i3-gaps directory. (note that i use light theme on i3)
 
 ## Feedback
 
