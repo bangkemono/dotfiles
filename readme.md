@@ -5,6 +5,8 @@
 # Dotfiles 
 ![iceage theme](https://i.imgur.com/rJRBJ2n.png)
 
+![lightnime theme](https://i.imgur.com/jU1JBGh.jpeg)
+
 ## Installation
 
 **BEFORE YOU INSTALL, MAKE SURE YOU REVIEW THE CODE AND REMOVE THE ONES YOU DO NOT NEED**<br/>
@@ -25,7 +27,7 @@ for iceage theme (the one i use for the preview), or
 ```bash
 cp bashrc ~/.bashrc && cp vimrc ~/.vimrc && cd i3-gaps/light/ && cp config/* -rv ~/.config/
 ```
-for the light theme config, or
+for the lightnime theme config, or
 ```bash
 cp bashrc ~/.bashrc && cp vimrc ~/.vimrc && cd i3-gaps/dark/ && cp config/* -rv ~/.config/
 ```
@@ -36,7 +38,7 @@ for the dark theme config
 There are 3 themes that are currently available for my i3-gaps config (i will post screenshots of it later)  
 
 * Iceage (custom theme with a nord-ish look)
-* Light Theme
+* Lightnime Theme
 * Dark Theme
 
 ## Feedback

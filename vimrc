@@ -37,26 +37,29 @@ Plug 'https://github.com/preservim/nerdtree.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'https://github.com/vim-scripts/AutoComplPop.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
-Plug 'https://github.com/ghifarit53/tokyonight-vim'
-Plug 'https://github.com/srcery-colors/srcery-vim'
 Plug 'https://github.com/preservim/nerdcommenter.git'
-Plug 'https://github.com/cocopon/iceberg.vim.git'
+Plug 'https://github.com/danilo-augusto/vim-afterglow'
+Plug 'https://github.com/sainnhe/everforest'
 
 call plug#end()
 
 "lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'everforest',
       \ }
 
 "my colorscheme
 set t_Co=256
-colorscheme iceberg "suits the iceage theme
-"colorscheme tokyonight "suits better with dark bg
-"colorscheme srcery  "suits better with light bg
+"colorscheme afterglow "suits better with i3 config
+colorscheme everforest "suits better with dwm config
+let g:everforest_background = 'hard'
 set background=dark
 set termguicolors
+
+"I had some problem with NERDTree which makes nerdtree unclean
+"so yeah i kinda did this
+let NERDTreeIgnore = ['\.DAT$', '\.LOG1$', '\.LOG1$']
 
 "tokyonight had problems with sourcing, so i did this
 source $VIMRUNTIME/defaults.vim

@@ -1,0 +1,13 @@
+xrdb -merge .Xresources &
+
+/* dual mon */
+/*xrandr --output eDP-1 --mode 1366x768 --pos 0x0 --rotate normal --output DP-1 --primary --mode 1366x768 --pos 1366x0 --rotate normal --brightness 0.75 --gamma 0.75:0.75:0.75 & */
+/*feh --bg-scale ~/Pictures/anime-street.png --bg-fill ~/Pictures/anime_street_2.jpg & */
+
+/* single mon */
+xrandr --output eDP-1 --off --output DP-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --brightness 0.75 --gamma 0.75:0.75:0.75 &
+feh --bg-scale ~/Pictures/anime-street.png &
+
+exec compton &
+exec slstatus &
+exec dwm 
