@@ -16,8 +16,8 @@ set incsearch
 set backspace=2
 set splitbelow
 
-"just in case i don't need the swapfile (in which i doubt i would)
-set noswapfile
+"laptop has battery, pc doesn't. So this stays off
+"set noswapfile
 
 "NERDTree always change root dir, for compiling purposes and other stuffs 
 set autochdir
@@ -27,7 +27,7 @@ let NERDTreeChDirMode=2
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>c :term<CR>
 
-"keymap regarding code (Who says that vim can't be a comfy IDE??)
+"run python interpreter
 nmap <C-i> :w<CR> :! python3 %<CR>
 
 "Plugins
@@ -57,9 +57,8 @@ let g:everforest_background = 'hard'
 set background=dark
 set termguicolors
 
-"I had some problem with NERDTree which makes nerdtree unclean
-"so yeah i kinda did this
+"I had some problem with NERDTree (on win10)
 let NERDTreeIgnore = ['\.DAT$', '\.LOG1$', '\.LOG1$']
 
-"tokyonight had problems with sourcing, so i did this
+"tokyonight had problems with sourcing, did this
 source $VIMRUNTIME/defaults.vim
