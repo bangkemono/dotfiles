@@ -15,50 +15,46 @@ set smartcase
 set incsearch
 set backspace=2
 set splitbelow
-
-"laptop has battery, pc doesn't. So this stays off
-"set noswapfile
-
-"NERDTree always change root dir, for compiling purposes and other stuffs 
+set foldmethod=marker
 set autochdir
-let NERDTreeChDirMode=2
+let g:netrw_banner=0
+let g:netrw_winsize=20
+let g:netrw_altv=1
+
+"just in case i don't need the swapfile (in which i doubt i would)
+set noswapfile
 
 "Keybinds
-nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>t :Lex<CR>
 nnoremap <leader>c :term<CR>
 
-"run python interpreter
+"keymap regarding code (Who says that vim can't be a comfy IDE??)
 nmap <C-i> :w<CR> :! python3 %<CR>
 
 "Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'https://github.com/preservim/nerdtree.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
 Plug 'https://github.com/vim-scripts/AutoComplPop.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 Plug 'https://github.com/preservim/nerdcommenter.git'
-Plug 'https://github.com/danilo-augusto/vim-afterglow'
-Plug 'https://github.com/sainnhe/everforest'
+Plug 'https://github.com/ghifarit53/tokyonight-vim'
 
 call plug#end()
 
 "lightline settings
 set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'everforest',
-      \ }
+let g:lightline = { 'colorscheme': 'tokyonight', }
 
 "my colorscheme
 set t_Co=256
-"colorscheme afterglow "suits better with i3 config
-colorscheme everforest "suits better with dwm config
-let g:everforest_background = 'hard'
-set background=dark
 set termguicolors
+set term=st-256color
+let g:tokyonight_style = 'night'
+let g:tokyonight_enable_italic = 1
+colorscheme tokyonight "suits better with light bg
+set background=dark
 
-"I had some problem with NERDTree (on win10)
-let NERDTreeIgnore = ['\.DAT$', '\.LOG1$', '\.LOG1$']
-
-"tokyonight had problems with sourcing, did this
-source $VIMRUNTIME/defaults.vim
+" fix st color
+let &t_8f = "\<ESC>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<ESC>[48;2;%lu;%lu;%lum"
