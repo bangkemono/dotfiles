@@ -1,0 +1,66 @@
+! Use a nice truetype font and size by default... 
+xterm*faceName: BigBlueTerm437 Nerd Font
+xterm*faceSize: 9
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+! I like a LOT of scrollback...
+xterm*savelines: 16
+
+! double-click to select whole URLs :D
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! special
+xterm*foreground:   #d8caac
+xterm*background:   #000000
+xterm*cursorColor:  #d8caac
+
+! black
+xterm*color0:       #000000
+xterm*color8:       #868d80
+
+! red
+xterm*color1:       #e68183
+xterm*color9:       #e68183
+
+! green
+xterm*color2:       #caa3ff
+xterm*color10:      #caa3ff
+
+! yellow
+xterm*color3:       #cc8c8c
+xterm*color11:      #cc8c8c
+
+! blue
+xterm*color4:       #a48ab2
+xterm*color12:      #a48ab2
+
+! magenta
+xterm*color5:       #d3a0bc
+xterm*color13:      #d3a0bc
+
+! cyan
+xterm*color6:       #c3aad1
+xterm*color14:      #c3aad1
+
+! white
+xterm*color7:       #d8caac
+xterm*color15:      #d8caac
+
+! right hand side scrollbar...
+xterm*rightScrollBar: false
+xterm*ScrollBar: false 
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false
+
+! Keybindings
+XTerm.vt100.translations: #override \n\
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font()
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! Enables Copy and Paste
+xterm*selectToClipboard: true

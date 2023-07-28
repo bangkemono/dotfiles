@@ -1,0 +1,100 @@
+/**
+ * User: qball
+ * Copyright: Dave Davenport
+ */
+* {
+    text-color:  @white;
+    background-color:  rgba(0,0,0,0);
+    dark: #252525;
+    // Black
+    black:       #3d352a;
+    lightblack:  #554444;
+    // Green
+    green:       #52ff9d;
+    lightgreen:  #88cc22;
+    // White
+    white:      #fbefeb;
+    lightwhite:     #ddccbb;
+    // Bold, Italic, Underline
+    highlight:     bold #ffffff;
+}
+
+window {
+    /*padding: 10px;*/
+    height:   25%;
+    width: 15em;
+    location: center;
+    anchor:   center;
+    border:  0px 2px 0px 0px;
+    text-color: @black;
+}
+
+mode-switcher {
+    border: 2px 0px 0px 0px;
+    background-color: @lightblack;
+    padding: 4px;
+}
+
+button selected {
+    border-color: @lightgreen;
+    text-color: @lightgreen;
+}
+
+inputbar {
+    background-color: @dark;
+    padding: 4px;
+    border: 0px 0px 2px 0px;
+}
+
+mainbox {
+    expand: true;
+    background-color: @dark;
+    spacing: 1em;
+}
+
+listview {
+    padding: 0em 0.4em 0em 1em;
+    dynamic: false;
+    lines: 0;
+}
+
+element selected  normal {
+    background-color: @green;
+}
+
+element normal active {
+    text-color: @purple;
+}
+
+element normal urgent {
+    text-color: @lightred;
+}
+
+element alternate normal {
+}
+
+element alternate active {
+    text-color: @lightblue;
+}
+
+element alternate urgent {
+    text-color: @lightred;
+}
+
+element selected active {
+    background-color: @lightblue;
+    text-color: @dark;
+}
+
+element selected urgent {
+    background-color: @lightred;
+    text-color: @dark;
+}
+
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}

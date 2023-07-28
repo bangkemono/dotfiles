@@ -1,0 +1,75 @@
+/**
+ * User: qball
+ * Copyright: Dave Davenport
+ */
+* {
+    text-color:  @white;
+    background-color:  rgba(0,0,0,0);
+    dark: #252525;
+    // Black
+    black:        #3d352a;
+    lightblack:   #554444;
+    // purple
+    purple:       #a48ab2;
+    lightpurple:  #c3aad1;
+    // White
+    white:        #fbefeb;
+    lightwhite:   #ddccbb;
+    // Bold, Italic, Underline
+    highlight:     bold #ffffff;
+}
+
+window {
+    /*padding: 10px;*/
+    height:   25%;
+    width: 15em;
+    location: center;
+    anchor:   center;
+    border:  0px 2px 0px 0px;
+    text-color: @black;
+}
+
+mode-switcher {
+    border: 2px 0px 0px 0px;
+    background-color: @lightblack;
+    padding: 4px;
+}
+
+button selected {
+    border-color: @lightpurple;
+    text-color: @lightpurple;
+}
+
+inputbar {
+    background-color: @dark;
+    padding: 4px;
+    border: 0px 0px 2px 0px;
+}
+
+mainbox {
+    expand: true;
+    background-color: @dark;
+    spacing: 1em;
+}
+
+listview {
+    padding: 0em 0.4em 0em 1em;
+    dynamic: false;
+    lines: 0;
+}
+
+element selected  normal {
+    background-color: @purple;
+}
+
+element normal active {
+    text-color: @purple;
+}
+
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}
